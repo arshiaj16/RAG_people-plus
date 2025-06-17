@@ -36,18 +36,12 @@ An intelligent document-based chatbot powered by Retrieval-Augmented Generation 
 
 ## 🔧 Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/PulkitBansal2/PeoplePlus.git
-   cd PeoplePlus
-   ```
-
-2. **Install dependencies**
+1. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Environment Setup**
+2. **Environment Setup**
    Create a `.env` file with the following variables:
    ```env
    # Database Configuration
@@ -63,20 +57,20 @@ An intelligent document-based chatbot powered by Retrieval-Augmented Generation 
    HF_TOKEN=your_huggingface_token
    ```
 
-4. **Document Preparation**
+3. **Document Preparation**
    ```bash
    # Create data directory and add your PDF documents
    mkdir data
    # Place your PDF files in the data/ directory
    ```
 
-5. **Database Setup**
+4. **Database Setup**
    ```bash
    # The application will automatically create the database and tables
    python main.py  # This will initialize the vector store and database
    ```
 
-6. **Run the application**
+5. **Run the application**
    ```bash
    # Start the web server
    uvicorn app:app --reload --host 0.0.0.0 --port 8000
@@ -235,18 +229,4 @@ CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
 - HuggingFace for embedding models
 - FastAPI for the excellent web framework
 
----
 
-⭐ **Star this repository if you find it helpful!**
-
-## 🔧 Quick Setup Commands
-
-```bash
-# Complete setup in one go
-git clone https://github.com/PulkitBansal2/PeoplePlus.git
-cd PeoplePlus
-pip install -r requirements.txt
-# Add your .env file and PDF documents
-python main.py  # Initialize the system
-uvicorn app:app --reload  # Start the web server
-```
